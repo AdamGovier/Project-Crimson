@@ -1,0 +1,1 @@
+Files in the core directory are files which are copied into the destination project.

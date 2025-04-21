@@ -1,0 +1,1 @@
+export const hostUri = "http://localhost:3000"

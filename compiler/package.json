@@ -1,0 +1,33 @@
+{
+  "name": "compiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsx src/index.ts && concurrently \"cd ../dist/ && pnpm i && npm run server\" \"wait-on http://localhost:3000 && cd ../dist/ && npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^11.0.0",
+    "concurrently": "^9.1.2",
+    "create-package-json": "^1.1.0",
+    "fastify": "^5.2.1",
+    "fastify-cors": "^6.0.3",
+    "fs": "^0.0.1-security",
+    "glob": "^11.0.1",
+    "just-group-by": "^2.2.0",
+    "lodash.groupby": "^4.6.0",
+    "prettier": "^3.5.2",
+    "ts-empty-line-encoder": "^2.2.0",
+    "type-fest": "^4.35.0",
+    "typeorm": "^0.3.20",
+    "typescript": "^5.7.3",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "wait-on": "^8.0.3"
+  }
+}

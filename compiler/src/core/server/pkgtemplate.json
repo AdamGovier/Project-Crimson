@@ -1,0 +1,18 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "private": true,
+  "workspaces": ["shared", "server"],
+  "keywords": [],
+  "scripts": {
+    "build": "npx tsc",
+    "server": "nodemon --exec ts-node server/index.ts",
+    "client": "cd ./client && vite"
+  },
+  "author": "Adam Govier <adam.govier@dev4.online>",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+  }
+}

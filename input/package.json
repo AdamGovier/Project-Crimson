@@ -1,0 +1,26 @@
+{
+  "name": "input",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "run": "nodemon --watch . --watch ../library --ext ts,vue --exec \"cd ../compiler && npm run start\""
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "@mdi/js": "^7.4.47",
+    "material-design-icons-iconfont": "^6.7.0",
+    "nodemon": "^3.1.9",
+    "typeorm": "^0.3.20",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vuetify": "^3.8.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0",
+    "vue-tsc": "^2.2.0"
+  }
+}
